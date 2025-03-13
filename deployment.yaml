@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: embedding-service
-        image: your-registry.example.com/embedding-service:latest
+        image: quay.io/wjackson/embedding-service:latest
         ports:
         - containerPort: 8080
         resources:

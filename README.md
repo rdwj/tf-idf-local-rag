@@ -91,6 +91,11 @@ spec:
       - name: model-storage
         persistentVolumeClaim:
           claimName: embedding-model-pvc
+```
+
+### Create a YAML service file
+
+```yaml
 ---
 apiVersion: v1
 kind: Service
@@ -103,6 +108,11 @@ spec:
   - port: 8080
     targetPort: 8080
   type: ClusterIP
+```
+
+### Create a YAML deployment file
+
+```yaml
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
